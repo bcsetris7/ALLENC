@@ -51,7 +51,7 @@ def hash_cracker(pass_file,hash_str):
 
 def main():
     func_list = ['','md5_hash(password)','sha256_hash(password)','sha224_hash(password)','sha1_hash(password)','sha384_hash(password)','sha512_hash(password)']
-    HoC = input("code by bcsetris7 terus pilih mana ? (hash/crack) : ")
+    HoC = input("code by bcsetris7 terus pilih mana ? (hash) : ")
     if HoC == 'hash':
         password = input("enter text to hash : ")
         method = input("""  choose your method :
@@ -63,11 +63,11 @@ def main():
 5) sha384
 6) sha512
 """)
-        eval(func_list[int(method)])
-    elif HoC == 'crack':
-        pass_file = input("enter the password file name ")
-        hash_str = input("enter the string to be hashed ")
-        hash_cracker(pass_file,hash_str)
+      #  eval(func_list[int(method)])
+   # elif HoC == 'crack':
+      #  pass_file = input("enter the password file name ")
+      #  hash_str = input("enter the string to be hashed ")
+       # hash_cracker(pass_file,hash_str)
                                                                                                       
 
 main()
